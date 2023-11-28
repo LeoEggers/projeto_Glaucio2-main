@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <style>
+        #Cabecalho {
+            display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+    text-align: center;
+        }
+
+        #Home:hover {
+            color: gold;
+        }
+
+        #Contato:hover {
+            color: gold;
+        }
+
+        #Area:hover {
+            color: gold;
+        }
+
+    </style>
+</head>
+<body>
+    <h1><div id="Cabecalho">
+       <a id="Home" href="index.html"><span> Home | </span></a>
+       <a id="Contato" href="contato.html"><span> Contato | </span></a>
+       <a id="Area" href="areaadmin.html"><span> Área Admin | </span></a>
+    </div></h1>
+    
+    <div id="Corpo">
+        <p>Contato</p>
+        <p>Nome:</p>
+        <input name="infomsg" id="nome" type="text"> 
+        <p>E-mail:</p>
+        <input name="infomsg" id="email" type="text"> 
+        <p>Mensagem:</p>
+        <input name="infomsg" id="msg" type="text">
+        <p></p>
+        <input type="button" value="Enviar" onclick="enviarMsg()">
+    </div>
+
+    <script src="api/jquery-3.6.4.min.js"></script>
+    <script src="api/api.js"></script>
+    <script src="contato.js"></script>
+</body>
+</html>

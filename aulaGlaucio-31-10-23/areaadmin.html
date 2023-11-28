@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AreaAdmin</title>
+    <style>
+        #Cabecalho {
+            display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+    text-align: center;
+        }
+
+ 
+        #Home:hover {
+            color: gold;
+        }
+
+        #Contato:hover {
+            color: gold;
+        }
+
+        #Area:hover {
+            color: gold;
+        }
+
+    </style>
+</head>
+<body>
+    <h1><div id="Cabecalho">
+       <a id="Home" href="index.html"><span> Home | </span></a>
+       <a id="Contato" href="contato.html"><span> Contato | </span></a>
+       <a id="Area" href="areaadmin.html"><span> Área Admin | </span></a>
+    </div></h1>
+    
+    <div>
+        <p>Login:</p>
+        <input id="login" type="text">
+        <p>Senha:</p>
+        <input id="senha" type="password">
+        <p></p>
+        <input type="button" value="Entrar" onclick="validarEntrada()">
+        <p id="entradaValida"> LINK de entrada aparece aqui </p>
+    </div>
+    
+    <script src="api/jquery-3.6.4.min.js"></script>
+    <script src="api/api.js"></script>
+    <script src="areaadmin.js"></script>
+    
+</body>
+</html>

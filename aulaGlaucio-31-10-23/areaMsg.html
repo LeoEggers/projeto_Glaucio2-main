@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AreaMsgs</title>
+    <style>
+        #Cabecalho {
+            display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+    text-align: center;
+        }
+
+
+        #Home:hover {
+            color: gold;
+        }
+
+        #Contato:hover {
+            color: gold;
+        }
+
+        #Area:hover {
+            color: gold;
+        }
+
+    </style>
+</head>
+<body>
+    <h1><div id="Cabecalho">
+       <a id="Home" href="index.html"><span> Home | </span></a>
+       <a id="Contato" href="contato.html"><span> Contato | </span></a>
+       <a id="Area" href="areaadmin.html"><span> Área Admin | </span></a>
+    </div></h1>
+    
+    <div id="Corpo">
+       <p>Área Mensagens</p>
+       <input type="button" value="Atualizar" onclick="receberDados()">
+
+       <table id="mensagens1">
+        <tr>
+            <th>Nome</th>
+            <th>E-mail</th>
+            <th>Mensagem</th>
+        </tr>
+       </table>
+       
+    </div>
+    
+    <script src="api/jquery-3.6.4.min.js"></script>
+    <script src="api/api.js"></script>
+    <script src="areaMsg.js"></script>
+</html>
